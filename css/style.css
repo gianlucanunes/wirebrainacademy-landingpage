@@ -1,0 +1,30 @@
+/*#region global*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("");
+}
+
+:root{
+    --main-font: "Montserrat";
+    --col-black: #000000;
+    --col-dk-blue: #14213d;
+    --col-yellow: #fca311;
+    --col-gray: #e5e5e5;
+    --col-white: #ffffff;
+}
+
+body{
+    background-color: var(--col-black);
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--col-white);
+}
+
