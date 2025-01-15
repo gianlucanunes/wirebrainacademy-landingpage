@@ -4,12 +4,10 @@
     margin: 0;
     font-family: var(--main-font);
 }
-
 @font-face {
     font-family: "Montserrat", sans-serif;
     src: url("");
 }
-
 :root {
     --main-font: "Montserrat";
     --col-black: #000000;
@@ -18,28 +16,18 @@
     --col-gray: #e5e5e5;
     --col-white: #ffffff;
 }
-
 body {
     background-color: var(--col-black);
 }
-
 h1 {
     font-size: 4rem;
     color: var(--col-white);
 }
-
 /*#endregion*/
 
 /*#region navbar*/
-.navbarStyle {
-    background-color: red;
-    width: 100%;
-}
-
-/* Center the navbar items on large screens (above 991px) */
 .nav-center {
     position: absolute;
-    /* Center the nav-items for large screens */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -48,23 +36,39 @@ h1 {
     margin: 0;
     padding: 0;
 }
-
-
-
-
-/*#endregion*/
-
-/*#region login*/
+.nav-item a{
+    transition: .2s;
+}
+.nav-item a:hover{
+    color: var(--col-black);
+    transition: .2s;
+}
 .login {
     padding: 0 5px;
 }
 
 .login button{
     margin-left: 10px;
+    transition: .2s;
+    border-style: none;
+}
+.login button:hover{
+    margin-left: 10px;
+    transition: .2s;
+    color: var(--col-black);
+    background-color: #fca311!important;
+}
+.login button:active{
+    color: var(--col-black)!important;
 }
 
 .login i {
+    transition: .2s;
     font-size: 30px;
 }
-
+.login i:hover {
+    transition: .2s;
+    cursor: pointer;
+    color: var(--col-yellow);
+}
 /*#endregion*/
