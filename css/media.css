@@ -1,0 +1,20 @@
+/* Reset positioning for small screens (below 991px) */
+@media (max-width: 991px) {
+    .nav-center {
+        position: static;
+        transform: none;
+        left: auto;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-collapse {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        /* Ensure nav items align nicely in the collapsed state */
+    }
+}
