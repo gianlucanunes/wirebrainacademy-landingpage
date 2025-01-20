@@ -83,13 +83,31 @@ h1 {
 }
 .carousel-item img{
     width: 75%;
+    transition: .2s;
     margin: 0 auto;
+}
+.carousel-item img:hover{
+    transform: scale(1.03); /* Increase size by 20% */
+    transition: .2s;
+    cursor: pointer;
 }
 .carousel-control-prev,
 .carousel-control-next {
     background-color: transparent; /* Remove the default gray background */
     filter: invert(1); /* Inverts the color (makes it white on dark backgrounds) */
 }
+/*#endregion*/
 
-
+/*#region section1*/
+.square{
+    background-color: var(--col-yellow);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square h1{
+    text-align: center;
+    margin: 0 auto;
+}
 /*#endregion*/
