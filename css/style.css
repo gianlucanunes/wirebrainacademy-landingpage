@@ -1,13 +1,15 @@
 /*#region global*/
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: var(--main-font);
 }
+
 @font-face {
     font-family: "Montserrat", sans-serif;
     src: url("");
 }
+
 :root {
     --main-font: "Montserrat";
     --col-black: #000000;
@@ -16,13 +18,16 @@
     --col-gray: #e5e5e5;
     --col-white: #ffffff;
 }
+
 body {
     background-color: var(--col-black);
 }
+
 h1 {
     font-size: 4rem;
     color: var(--col-white);
 }
+
 /*#endregion*/
 
 /*#region navbar*/
@@ -36,78 +41,152 @@ h1 {
     margin: 0;
     padding: 0;
 }
-.nav-item a{
+
+.nav-item a {
     transition: .2s;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     color: var(--col-black);
     transition: .2s;
 }
+
 .login {
     padding: 0 5px;
 }
-.login button{
+
+.login button {
     margin-left: 10px;
     transition: .2s;
     border-style: none;
 }
-.login button:hover{
+
+.login button:hover {
     margin-left: 10px;
     transition: .2s;
     color: var(--col-black);
-    background-color: #fca311!important;
+    background-color: #fca311 !important;
 }
-.login button:active{
-    color: var(--col-black)!important;
+
+.login button:active {
+    color: var(--col-black) !important;
 }
+
 .login i {
     transition: .2s;
     font-size: 30px;
 }
+
 .login i:hover {
     transition: .2s;
     cursor: pointer;
     color: var(--col-yellow);
 }
+
 /*#endregion*/
 
 /*#region section1*/
-#section1{
+#section1 {
     height: 92vh;
     width: 100%;
     background-color: var(--col-white);
 }
-#imageCarousel{
+
+#imageCarousel {
     width: 100%;
     height: 100%;
 }
-.carousel-item img{
+
+.carousel-item img {
     width: 75%;
     transition: .2s;
     margin: 0 auto;
 }
-.carousel-item img:hover{
-    transform: scale(1.03); /* Increase size by 20% */
+
+.carousel-item img:hover {
+    transform: scale(1.03);
+    /* Increase size by 20% */
     transition: .2s;
     cursor: pointer;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: transparent; /* Remove the default gray background */
-    filter: invert(1); /* Inverts the color (makes it white on dark backgrounds) */
+    background-color: transparent;
+    /* Remove the default gray background */
+    filter: invert(1);
+    /* Inverts the color (makes it white on dark backgrounds) */
 }
+
 /*#endregion*/
 
-/*#region section1*/
-.square{
+/*#region section2*/
+.square {
     background-color: var(--col-yellow);
     margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.square h1{
+
+.square h1 {
     text-align: center;
     margin: 0 auto;
 }
+
+.list-group-item i {
+    font-size: 40px !important;
+}
+
 /*#endregion*/
+
+/*#region section3*/
+#section3 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--col-white);
+    text-align: center;
+}
+
+#section3 h1 {
+    color: var(--col-black);
+    padding: 30px 0;
+}
+swiper-container {
+    width: 350px;
+    height: 450px;
+    margin: 0px auto;
+}
+swiper-slide {
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--col-black);
+}
+swiper-slide img{
+    margin-top: 20px;
+    width: 70px;
+    border-radius: 50%;
+}
+swiper-slide p{
+    padding: 20px 25px;
+    font-size: 14px
+}
+swiper-slide i{
+    color: var(--col-yellow)
+}
+swiper-slide h1{
+    font-size: 28px;
+    font-weight: 1000px;
+}
+swiper-slide h2{
+    font-size: 18px;
+    font-weight: 1000px;
+    font-style: italic;
+}
+swiper-slide:nth-child(1n) {
+    background-color: var(--col-gray)
+}
+
+
+/*#enregion*/
