@@ -20,12 +20,12 @@
 }
 
 body {
-    background-color: var(--col-black);
+    background-color: var(--col-white);
 }
 
 h1 {
     font-size: 4rem;
-    color: var(--col-white);
+    color: var(--col-black);
 }
 
 /*#endregion*/
@@ -103,7 +103,7 @@ h1 {
     margin: 0 auto;
 }
 
-.carousel-item img:hover {
+#section1 .carousel-item img:hover {
     transform: scale(1.03);
     /* Increase size by 20% */
     transition: .2s;
@@ -121,6 +121,10 @@ h1 {
 /*#endregion*/
 
 /*#region section2*/
+#section2{
+    background-color: var(--col-black);
+    padding: 20px 0;
+}
 .square {
     background-color: var(--col-yellow);
     margin-bottom: 16px;
@@ -132,6 +136,7 @@ h1 {
 .square h1 {
     text-align: center;
     margin: 0 auto;
+    color: var(--col-white);
 }
 
 .list-group-item i {
@@ -142,10 +147,15 @@ h1 {
 
 /*#region section3*/
 #section3 {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: var(--col-white);
     text-align: center;
+}
+
+#section3 hr{
+    width: 85%;
+    margin: 0 auto;
 }
 
 #section3 h1 {
@@ -187,6 +197,29 @@ swiper-slide h2{
 swiper-slide:nth-child(1n) {
     background-color: var(--col-gray)
 }
-
-
 /*#enregion*/
+
+/*#region section4*/
+#section4 {
+    margin: 0 auto;
+    height: 100vh;
+    width: 90%;
+    background-color: var(--col-white);
+    text-align: center;
+}
+#section4 h1 {
+    color: var(--col-black);
+}
+#section4 .container{
+    background-color: red;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#section4 .card{
+    margin-top: 15px;
+}
+/*#endregion*/
