@@ -211,13 +211,16 @@ swiper-slide:nth-child(1n) {
     color: var(--col-black);
 }
 #section4 .container{
-    background-color: red;
+    margin: 0 auto;
+    padding: 20px 0;
+   
+}
+#section4 .res{
+    padding: 0!important;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px 0;
 }
 #section4 .card{
     margin-top: 15px;
