@@ -27,6 +27,11 @@ h1 {
     font-size: 4rem;
     color: var(--col-black);
 }
+.content {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
 
 /*#endregion*/
 
@@ -197,7 +202,7 @@ swiper-slide h2{
 swiper-slide:nth-child(1n) {
     background-color: var(--col-gray)
 }
-/*#enregion*/
+/*#endregion*/
 
 /*#region section4*/
 #section4 {
@@ -224,5 +229,29 @@ swiper-slide:nth-child(1n) {
 }
 #section4 .card{
     margin-top: 15px;
+    transition: .2s;
+}
+#section4 .card:hover{
+    transition: .2s;
+    transform: scale(1.02);
+    cursor: pointer;
+
+}
+
+.card-body .btn{
+    background-color: var(--col-yellow)!important;
+    color: var(--col-black);
+    border: none;
+    transition: .2s;
+}
+
+.card-body .btn:hover{
+    transition: .2s;
+    transform: scale(1.02);
+    font-weight: 500;
+}
+
+.card-body .btn:active{
+    color: var(--col-black) !important;
 }
 /*#endregion*/
