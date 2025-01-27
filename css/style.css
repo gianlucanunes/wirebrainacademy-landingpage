@@ -32,7 +32,9 @@ h1 {
     transform: scale(0.5);
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
-
+hr{
+    margin: 0;
+}
 /*#endregion*/
 
 /*#region navbar*/
@@ -154,7 +156,9 @@ h1 {
 #section3 {
     height: 80vh;
     width: 100%;
-    background-color: var(--col-white);
+    background: 
+        linear-gradient(45deg, #fca311 25%, transparent 25%, transparent 75%, #fca311 75%, #fca311),
+        linear-gradient(45deg, #fca311 25%, white 25%, white 75%, #fca311 75%, #fca311);
     text-align: center;
 }
 
@@ -207,11 +211,11 @@ swiper-slide:nth-child(1n) {
 /*#region section4*/
 #section4 {
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
     width: 90%;
-    background-color: var(--col-white);
     text-align: center;
 }
+#section4
 #section4 h1 {
     color: var(--col-black);
 }
@@ -237,21 +241,43 @@ swiper-slide:nth-child(1n) {
     cursor: pointer;
 
 }
-
 .card-body .btn{
     background-color: var(--col-yellow)!important;
     color: var(--col-black);
     border: none;
     transition: .2s;
 }
-
 .card-body .btn:hover{
     transition: .2s;
     transform: scale(1.02);
     font-weight: 500;
 }
-
 .card-body .btn:active{
     color: var(--col-black) !important;
 }
+#section4 button {
+    margin: 30px 0;
+    transition: .2s;
+    border-style: none;
+}
+#section4 button:hover {
+    transition: .2s;
+    color: var(--col-black);
+    background-color: #fca311 !important;
+}
+#section4 button:active {
+    color: var(--col-black) !important;
+}
 /*#endregion*/
+.footerContainer{
+    width: 100%;
+    height: 240px;
+    background-color: var(--col-black);
+    text-align: center;
+}
+
+.footerContainer p{
+    padding-top: 200px;
+    margin: 0 auto;
+    color: var(--col-white);
+}
